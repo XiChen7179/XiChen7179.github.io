@@ -429,6 +429,7 @@ video{
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin-bottom: 2rem;
 }
 
 .contact-info-upper-container {

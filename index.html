@@ -16,7 +16,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -32,7 +32,7 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
@@ -46,29 +46,20 @@
         <p class="section__text__p2">Computer Science Major Student at Georgia Tech</p>
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
+            class="btn btn-color-1"
             onclick="window.open('./assets/Xi Chen Resume.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
+          <button class="btn btn-color-2">
+            <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+            onclick="window.open('https://www.linkedin.com/in/xi-chen-b90271231/')"
+            />
           </button>
         </div>
-        <!-- <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/xi-chen-b90271231/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div> -->
       </div>
     </section>
     <section id="about">
@@ -487,38 +478,9 @@
         </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
 
-
-    
-    <section id="contact">
-      <p class="section__text__p1">Let's Connect</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:xchen819@gatech.edu">xchen819@gatech.edu</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/xi-chen-b90271231/" target="_blank">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
+  
     <footer>
     </footer>
     <script src="script.js"></script>
