@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id ="HMI">
+        <a href="index.html#projects" class="btn btn-color-2 project-btn">Go Back</a>
+        <p class="section__text__p1">ACT Lab: Human Machine Interface Components</p>
+        <h1 class="title">Stop Sign and Real-time Data Transportation</h1>
+        <div class="article-container"> 
+            <video controls loop>
+                <source src="assets/HMI Interface.mp4" type="video/mp4">
+                 Demo
+            </video>
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Description</h2>
+                <p>The platform functions as a vital support system for the driving experience, presenting real-time information about the vehicle and issuing alerts when necessary.</p>
+            </div>
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Problem it solves</h2>
+                <p>In the context of self-driving vehicles and Vehicle-to-Vehicle (V2V) communication, the platform addresses the critical need for dynamic, real-time data sharing and processing. It solves the problem of ensuring that autonomous vehicles remain constantly informed about their immediate environment, including the status of nearby vehicles, to enhance safety and efficiency on the road. By providing timely alerts and updates, the platform aids in preventing potential accidents, optimizing traffic flow, and facilitating seamless V2V interactions, crucial for the effective operation of self-driving systems.
+                </p>
+            </div>
+        </div>
+        <div class = "experience-details-container">
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">UDP Protocol</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/network.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                        <P1>This feature allows for fast, efficient communication between vehicles and the system by utilizing UDP, a lightweight communication protocol. This integration is crucial for transmitting real-time vehicle data, such as coordinates and other sensor information, with minimal latency. 
+                        </P1>
+                        </div>
+                    </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">Unity Interface</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/Unity.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                        <P1>This feature enables the realistic rendering of vehicles and their surroundings, providing a comprehensive view of real-time vehicle data and alerts, such as stop signs.
+                        </P1>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Recent Work</h2>
+                <p>Working on the map navigation and UI design</p>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

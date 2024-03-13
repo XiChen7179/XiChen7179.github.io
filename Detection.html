@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id ="Detection">
+        <a href="index.html#projects" class="btn btn-color-2 project-btn">Go Back</a>
+        <p class="section__text__p1">ACT Lab: Innovative Cyberattack Detection Model</p>
+        <h1 class="title">CAN Detection with Adversarial Training</h1>
+        <div class="article-container"> 
+            <video controls loop>
+                <source src="assets/Detection Model Demo.mp4" type="video/mp4">
+                 Demo
+            </video>
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Description</h2>
+                <p>The model is based on traditional CNN model but adding adversarial data to detect the anomality of datasets.</p>
+            </div>
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Problem it solves</h2>
+                <p>In the Controller Area Network, or CAN, attackers can inject malicious messages, leading to system malfunctions or worse.
+                     Recognizing this high vulnerability, this research model introduces a novel intrusion detection system that leverages deep learning 
+                     to safeguard vehicles against such threats.
+                </p>
+            </div>
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Recent Progress</h2>
+                <p>Working on the paper publishment and method optimization</p>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

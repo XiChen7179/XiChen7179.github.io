@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id ="TravelBot">
+        <a href="index.html#projects" class="btn btn-color-2 project-btn">Go Back</a>
+        <p class="section__text__p1">2024 Hacklytics - Generative AI Track</p>
+        <h1 class="title">TravelBot</h1>
+        <div class="article-container"> 
+            <video controls loop>
+                <source src="assets/TravelBotDemo.mp4" type="video/mp4">
+                 Demo
+            </video>
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Description</h2>
+                <p>The Travel Bot platform provides the most personalized and authentic hotel information and integrates real-time search APIs to help users make informed choices.</p>
+            </div>
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Problem it solves</h2>
+                <p>Nowadays, many individuals frequently travel, whether for business or leisure. A significant amount of time is often spent searching for the ideal hotel, as a good accommodation experience can greatly influence their overall trip satisfaction. To streamline this process, our Travelbot can assist travelers in identifying hotels that best match their preferences, saving them considerable time on their search. Our model automatically filters out undesirable options, ensuring users are presented only with hotels that meet their criteria. Furthermore, we leverage AI technology to provide the most reliable, real-time information by aggregating data from various hotel websites. This ensures our users have access to up-to-date details, making their decision-making process easier and more informed.</p>
+            </div>
+        </div>
+        <div class = "experience-details-container">
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">AI at the Core</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/robot.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                        <P1>The TravelBot is trained on extensive datasets. It can understand what makes a hotel stay special.
+                            From analyzing real-time information to understanding nuanced traveler review, TravelBot ensures 
+                            the recommendations are up-to-date and reliable.
+                        </P1>
+                        </div>
+                    </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">Real-Time Data</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/realtime.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                        <P1>The TravelBot stands out by leveraing real-time data from multiple hotel websites. This ensures that users are not just 
+                            getting a list of hotels but a curated selection based on the very latest availability, prices, and guest experiences. 
+                        </P1>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

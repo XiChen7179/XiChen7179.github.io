@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id ="RA">
+        <a href="index.html#experience" class="btn btn-color-2 project-btn">Go Back</a>
+        <p class="section__text__p1">SWE Intern 2023</p>
+        <h1 class="title">Software Engineer at Freetech, R&D Data Platform</h1>
+        <div class="article-container"> 
+            <img
+                  src="./assets/ft.jpg"
+                  alt="Experience icon"
+                  class ="icon"
+                  style="width: auto; height: 100px;"
+                />
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Description</h2>
+                <p>
+                    As a Software Engineering intern at Freetech Intelligent Systems, I contributed to pioneering projects focused on data extraction and the creation of automated road maps. My role involved harnessing cutting-edge technologies to develop and refine algorithms that intelligently analyze and process vast amounts of data, transforming raw information into structured formats. This foundational work paved the way for generating comprehensive road maps, essential for the advancement of autonomous vehicle navigation systems. 
+                </p>
+            </div>
+        </div>
+
+        <div class = "experience-details-container">
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">Data Engineering for Driving Simulation</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/idea.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        >
+                        <p>
+                        I devised a technique utilizing Wireshark, Point Cloud Data (PCD), Python, and XML to process the raw data captured by sensing cameras. Currently, a patent application is in progress for this innovative method.
+                        </p>
+                    </div>
+                    <div class="btn-container">
+                        <div class ="skills">
+                          Data
+                        </div>
+                        <div class ="skills">
+                          Backend
+                        </div>
+                        <div class ="skills">
+                          Wireshark/PCD/RosBag
+                        </div>
+                        <div class ="skills">
+                            Python
+                        </div>
+                    </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">Driving Simulation Generation</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/idea.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        >
+                        <p>
+                            I engineered algorithms that enable the automatic generation of both dynamic and static driving simulations across various road network layers using Carla and Python. Additionally, a patent has been applied for this cutting-edge technology.
+                        </p>
+                    </div>
+                    <div class="btn-container">
+                        <div class ="skills">
+                          Algorithms
+                        </div>
+                        <div class ="skills">
+                          Backend
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <div class ="skills">
+                            Carla/RoadRunner/XML
+                          </div>
+                          <div class ="skills">
+                              Python
+                          </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

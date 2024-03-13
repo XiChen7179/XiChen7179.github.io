@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id ="Detection">
+        <a href="index.html#projects" class="btn btn-color-2 project-btn">Go Back</a>
+        <p class="section__text__p1">Discover a List of Events</p>
+        <h1 class="title">Campus Discovery Webpage</h1>
+        <div class="article-container"> 
+            <video controls loop>
+                <source src="assets/Campus Discovery.mp4" type="video/mp4">
+                 Demo
+            </video>
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Description</h2>
+                <p>This webpage application is designed to streamline the management and registration of campus events. 
+                    Users can effortlessly register for upcoming events, access detailed information, and track their participation history.
+                </p>
+            </div>
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Problem it solves</h2>
+                <p>This application addresses the challenge of effectively organizing and disseminating information about campus events, eliminating the confusion and inefficiency often associated with manual event management and registration processes. By centralizing event listings, registration, and management into a single, user-friendly platform, it significantly improves accessibility for participants.
+                </p>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

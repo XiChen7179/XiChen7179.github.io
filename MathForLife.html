@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id ="RA">
+        <a href="index.html#experience" class="btn btn-color-2 project-btn">Go Back</a>
+        <p class="section__text__p1">Olney, Maryland</p>
+        <h1 class="title">President and Founder of Math For Life Club</h1>
+        <div class="article-container"> 
+            <img
+                  src="./assets/club_pic1.jpg"
+                  alt="Experience icon"
+                  class ="photo"
+                  style="width: auto; height: 300px;"
+                />
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Background</h2>
+                <p>The Math for Life Club is an innovative and engaging community of making mathematics both enjoyable and intellectually stimulating for its members. 
+                    Founded with the dual purpose of fostering a deep appreciation for math and applying mathematical concepts to solve real-world problems, 
+                    our club stands as a beacon for students passionate about mathematics. Central to our club's mission is the organization of fun math activities designed to challenge and excite.
+                    <br>
+                    In addition to our regular activities, the Math for Life Club is proud to participate in math modeling competitions. These competitions provide our members with the invaluable opportunity to apply theoretical mathematical knowledge to formulate and solve complex problems drawn from real-life scenarios. Through these contests, members not only 
+                    hone their analytical and critical thinking skills but also learn the significance of teamwork and strategy in the mathematical process.
+                </p>
+            </div>
+        </div>
+
+        <div class = "experience-details-container">
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">HiMCM</h2>
+                    <h3>International Finalist in 21st HiMCM</h3>
+                    <p>Self-defined math algorithms on world roller coasters ranking</p>
+                    <div class="article-container">
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('./HiMCM/21st_HiMCM.pdf', '_blank')"
+                        >
+                        View Paper
+                        </button>
+                    </div>
+                    <h3>International Finalist in 23rd HiMCM</h3>
+                    <p>Self-defined math algorithms on summer job choices</p>
+                    <div class="article-container">
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('./HiMCM/23rd_HiMCM.pdf', '_blank')"
+                        >
+                        View Paper
+                        </button>
+                    </div>
+                    <h3>Honorable Mention in 22nd HiMCM</h3>
+                    <p>Self-defined math algorithms on plastic water bottles policy</p>
+                    <div class="article-container">
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('./HiMCM/22nd_HiMCM.pdf', '_blank')"
+                        >
+                        View Paper
+                        </button>
+                    </div>
+                    <div class="btn-container">
+                      <div class ="skills">
+                        Math Modeling
+                      </div>
+                      <div class ="skills">
+                        Analysis
+                      </div>
+                      <div class ="skills">
+                        Leadership
+                      </div>
+                  </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">Math Puzzles</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/idea.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        >
+                        <p>
+                            Besides math modeling, our club takes great delight in exploring the intriguing world of math puzzles. These puzzles range from classic logic problems to complex brainteasers, providing both a fun challenge and a unique way to develop critical thinking and problem-solving skills. They serve as an excellent complement to our modeling activities, allowing members to apply mathematical concepts in a more playful and engaging context.
+                        </p>
+                    </div>
+                    <div class="btn-container">
+                      <div class ="skills">
+                        Analysis
+                      </div>
+                      <div class ="skills">
+                        Leadership
+                      </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Current</h2>
+                <p>The faculty moderator of the club is still facilitating the HiMCM competitions in the school with the new club president.</p>
+            </div>
+        </div>
+        
+        
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

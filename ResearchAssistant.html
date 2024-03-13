@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id ="RA">
+        <a href="index.html#experience" class="btn btn-color-2 project-btn">Go Back</a>
+        <p class="section__text__p1">Georgia Tech Autonomous Connection and Transporation Lab</p>
+        <h1 class="title">My RA Experience as a SubTeam Leader</h1>
+        <div class="article-container"> 
+            <img
+                  src="./assets/act.jpg"
+                  alt="Experience icon"
+                  class ="photo"
+                  style="width: auto; height: 300px;"
+                />
+        </div>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Background</h2>
+                <p>Georgia Tech Autonomous Connection and Transportation Lab is at the forefront of pioneering solutions for tomorrow's mobility challenges in the 
+                    smart cities. Within this broad mission, my specific subteam—the Human-Machine Interface (HMI) group—aims to bridge the gap 
+                    between human users and autonomous systems. Our goal is to create intuitive, user-friendly interfaces that facilitate interaction between people and machines, 
+                    ultimately contributing to the widespread acceptance and success of autonomous transportation technologies. 
+                    <br>
+                    Coupled with my academic background in intelligence and info networking and my commitment to fostering a collaborative team environment, 
+                    these qualities distinguished me as a prime candidate. Following a thorough evaluation by the lab's senior leadership, which included assessments of my technical contributions, 
+                    leadership abilities, and a proposal for the HMI group's future research direction, I was entrusted with the leadership of the HMI group. 
+
+                </p>
+            </div>
+        </div>
+
+        <div class = "experience-details-container">
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">HMI Project</h2>
+                    <div class="article-container">
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='HMIComponent1.html'"
+                        >
+                        View Demo
+                        </button>
+                        <p>
+                            This HMI interface is designed to enhance vehicular safety and situational awareness by displaying real-time data, such as vehicle coordinates, and deploying stop sign alerts when necessary. It ensures drivers and autonomous systems are well-informed and responsive to dynamic road conditions, fostering a safer driving environment.
+                        </p>
+                    </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">Cyber-Detection Project</h2>
+                    <div class="article-container">
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='Detection1.html'"
+                        >
+                        View Demo
+                        </button>
+                        <p>
+                            This research introduces a novel intrusion detection system for the Controller Area Network (CAN) in vehicles, aimed at enhancing security against cyber attacks.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Current Work</h2>
+                <p>Working on the map navigation and improving UI design</p>
+            </div>
+        </div>
+        
+        
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

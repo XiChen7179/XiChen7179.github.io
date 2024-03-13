@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/aboutpage1.jpeg" alt="Xi Chen profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Xi Chen (Sophia)</h1>
+        <p class="section__text__p2">Computer Science Major Student at Georgia Tech</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Xi Chen Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <!-- <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/xi-chen-b90271231/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div> -->
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know Me</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />Machine Learning and Data Modeling</p>
+              <p>3+ years <br/> Software Development</p>
+              <p>2+ years <br/> Intelligence</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> Candidate Bachelors Degree in CS <br> Candidate Bachelors Degree in Discrete Math</p>
+            </div>
+          </div>
+          
+          <div class="text-container">
+            <!-- <div class="section__pic-container">
+              <img
+                src="./assets/aboutme.jpeg"
+                alt="Profile picture"
+                class="about-pic"
+              />
+            </div> -->
+            <p>
+              I am Xi Chen, a computer science and math double major student at Georgia Tech, 
+              with a profound passion for leveraging technology and computer science to drive social change. 
+              Over the past 3+ years experience in College, I have been deeply involved in projects that aim to address societal challenges through innovative tech solutions. 
+              My curiosity and dedication to technology for society have led me to explore areas 
+              such as generative AI technology, software backend development, and complex data analysis through machine learning. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class = "experience-details-container">
+        <div class = "about-containers">
+          <div class = "details-container">
+            <h2 class="experience-sub-title">Part-time</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/research.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Research Assistant</h3>
+                  <P>Georgia Institute of Technology</P>
+                </div>
+              </article>
+              
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='ResearchAssistant.html'"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+          <div class = "details-container">
+            <h2 class="experience-sub-title">Internship</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/intern.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Software Engineer</h3>
+                  <P>Freetech</P>
+                </div>
+              </article>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='Freetech.html'"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+          <div class = "details-container">
+            <h2 class="experience-sub-title">Founding</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/founder.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>President and Founder</h3>
+                  <P>Our Lady of Good Counsel High School</P>
+                </div>
+              </article>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='MathForLife.html'"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/AI Chatbot1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="article-container">
+              <img
+                src="./assets/AI Chatbot2.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TravelBot</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='TravelBot.html'"
+              >View Demo
+              </button>
+            </div>
+            <p>TravelBot is an AI-powered hotel recommender, meticulously trained on an extensive database to tailor recommendations according to users' preferences. </p>
+            <div class="btn-container">
+              <div class ="skills">
+                AI/ML
+              </div>
+              <div class ="skills">
+                Backend
+              </div>
+              <div class ="skills">
+                Python/React
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/detection.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Detection Model</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='Detection.html'"
+              >View Demo
+              </button>
+            </div>
+            <p>
+              This research introduces a novel intrusion detection system for the Controller Area Network (CAN) in vehicles, aimed at enhancing security against cyber attacks.
+            </p>
+            <div class="btn-container">
+              <div class ="skills">
+                AI/ML
+              </div>
+              <div class ="skills">
+                Data Analysis
+              </div>
+              <div class ="skills">
+                Python/PyTorch
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/HMI.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">HMI Platform</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='HMIComponent.html'"
+                >
+                  View Demo
+                </button>
+              </div>
+              <p>
+                This HMI interface is designed to enhance vehicular safety and situational awareness by displaying real-time data, such as vehicle coordinates, and deploying stop sign alerts when necessary. It ensures drivers and autonomous systems are well-informed and responsive to dynamic road conditions, fostering a safer driving environment.
+              </p>
+              <div class="btn-container">
+                <div class ="skills">
+                  Full Stack
+                </div>
+                <div class ="skills">
+                  Interface
+                </div>
+                <div class ="skills">
+                  Unity/C#
+                </div>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/warehouse.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Warehouse Automation </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='warehouse.html'"
+                >
+                  View Demo
+                </button>
+              </div>
+              <p>
+                The virtual robot is an advanced autonomous system designed for exploring unknown environments and collecting items along its path. The combination of RRT and particle filtering equips the robot with robust capabilities for mapping, exploration, and item collection, bridging the gap between theoretical simulations and practical, real-world applications.
+              </p>
+              <div class="btn-container">
+                <div class ="skills">
+                  AI
+                </div>
+                <div class ="skills">
+                  Algorithm/Robot
+                </div>
+                <div class ="skills">
+                  Python
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/database.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Database Management </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+              <a href="https://github.com/" target="_blank" style="color: black;">GitHub</a>
+              </button>
+            </div>
+            <p>
+              In this project, I focus on developing the backend infrastructure besides setting up environment to connect an SQL database to the frontend interface, ensuring efficient data retrieval and management. Utilizing advanced SQL queries and stored procedures, I architect a robust data access layer that serves as the foundation for dynamic content presentation and user interaction on the frontend.
+            </p>
+            <div class="btn-container">
+              <div class ="skills">
+                Backend
+              </div>
+              <div class ="skills">
+                RESTAPI/DAO/Agile
+              </div>
+              <div class ="skills">
+                Java/React
+              </div>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/campus.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Campus Discovery </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='discovery.html'"
+              >
+                View Demo
+              </button>
+            </div>
+            <p>
+              I worked on full stack development. The application revolutionizes the management and registration of campus events by centralizing listings, enhancing accessibility for both organizers and participants. It solves the challenges of disseminating event information and streamlining administrative processes, thereby fostering a more engaged and well-informed campus community.
+            </p>
+            <div class="btn-container">
+              <div class ="skills">
+                Webpage
+              </div>
+              <div class ="skills">
+                Fullstack
+              </div>
+              <div class ="skills">
+                Java/React
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/decision.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Covid Vaccination Recommender </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+              <a href="./assets/COVID Vaccine Recommender.pdf" target="_blank" style="color: black;">View Demo</a>
+              </button>
+            </div>
+            <p>
+              I used decision trees and logistic regression techniques in Python, focusing on crafting an advanced data model designed to optimize vaccination decision-making processes. This initiative aimed at empowering individuals with insightful, data-driven guidance to make informed choices regarding vaccinations, enhancing public health outcomes.
+            </p>
+            <div class="btn-container">
+              <div class ="skills">
+                AI/ML
+              </div>
+              <div class ="skills">
+                Decision/Regression
+              </div>
+              <div class ="skills">
+                Python
+              </div>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ijca.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">K-means Clustering </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+              <a href="https://www.ijcaonline.org/archives/volume177/number47/chen-2020-ijca-919937.pdf" target="_blank" style="color: black;">View Publication</a>
+              </button>
+            </div>
+           <p>
+            I developed algorithms using K-means clustering in Python to authenticate the validity of banknotes, enhancing financial security measures. This research was recognized for its innovation and published on the International Journal of Computer Applications website.
+           </p>
+            <div class="btn-container">
+              <div class ="skills">
+                ML
+              </div>
+              <div class ="skills">
+                Pandas
+              </div>
+              <div class ="skills">
+                Python
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Let's Connect</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:xchen819@gatech.edu">xchen819@gatech.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/xi-chen-b90271231/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
