@@ -17,7 +17,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="index.html">Contact</a></li>
+          <li><a href="https://forms.gle/PNtrBFkGVJ7a5Byw5">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -33,13 +33,13 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="index.html" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="index.html" onclick="toggleMenu() " >Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/aboutpage1.jpeg" alt="Xi Chen profile picture" />
+        <img src="./assets/aboutpage1.png" alt="Xi Chen profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -54,7 +54,7 @@
           </button>
           <button 
             class="btn btn-color-2"
-            onclick="window.location.href='mailto:xchen819@gatech.edu'"
+            onclick="window.location.href='mailto:xichen.sophia@gmail.com'"
           >
             Email Me
           </button>
@@ -94,9 +94,9 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p> Candidate Bachelors Degree in CS <br> Candidate Bachelors Degree in Discrete Math
-                <br>Expected Graduating in 2025
+              <p> Candidate Bachelors Degree in Computer Science <br> Candidate Bachelors Degree in Discrete Math
               </p>
+              <p> Expected Graduating in 2025</p>
             </div>
           </div>
           
@@ -109,12 +109,7 @@
               />
             </div> -->
             <p>
-              I am Xi Chen, a computer science and math double major student at Georgia Tech, 
-              with a profound passion for leveraging technology and computer science to drive social change. 
-              Over the past 3+ years experience in College, I have been deeply involved in projects that aim to address societal challenges through innovative tech solutions. 
-              My curiosity and dedication to technology for society have led me to explore areas 
-              such as generative AI technology, software backend development, and complex data analysis through machine learning. 
-            </p>
+              I am Xi Chen (Sophia Chen) — a builder and problem-solver with a dual focus on AI systems and full-stack product engineering. I'm currently a senior at Georgia Tech studying Computer Science & Math and will graduate on December 2025. I am currently a Software Engineer Intern at Verio Labs, where I am building AI agents that reason, retrieve, and act autonomously using LangGraph and custom vector pipelines to deliver real-time, context-aware insights through twitter to their domain users. I’ve led full-stack and backend efforts for recognizable startups (like GooseCart), built hybrid RAG architectures at Hirebeat for their auto-hiring platform, and developed driving simulation at Freetech. I shipped intelligent systems that blend LLMs, orchestration, and real-time logic. My focus is always on building things that are technically solid and actually useful — fast systems, clean flows, and tools that scale.
           </div>
         </div>
       </div>
@@ -140,6 +135,33 @@
                   class="icon"
                 />
                 <div>
+                  <h3>Software Engineer Intern, Twitter Bot</h3>
+                  <P>Verio Labs</P>
+                </div>
+              </article>
+              
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='Verio.html'"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class = "about-containers">
+          <div class = "details-container">
+            <h2 class="experience-sub-title">Internship</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/intern.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
                   <h3>Software Development</h3>
                   <P>Hirebeat Inc.</P>
                 </div>
@@ -149,8 +171,9 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
+                onclick="location.href='Hirebeat.html'"
               >
-                Will be updated soon
+                View More
               </button>
             </div>
           </div>
@@ -172,8 +195,9 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
+                onclick="location.href='GooseCart.html'"
               >
-                Will be updated soon
+                View More
               </button>
             </div>
           </div>
@@ -216,7 +240,7 @@
                 />
                 <div>
                   <h3>Software Engineer</h3>
-                  <P>Freetech</P>
+                  <P>Freetech Intelligent System</P>
                 </div>
               </article>
             </div>
@@ -266,6 +290,7 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
+      
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
@@ -541,7 +566,14 @@
     </section>
 
   
-    <footer>
+    <footer style="padding: 2rem; text-align: center; font-size: 0.9rem; background-color: #232324; color: #f7f4f4;">
+      <p>Built by Xi (Sophia) Chen.</p>
+      <p>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+        <a onclick="window.location.href='mailto:xichen.sophia@gmail.com'">Email</a>
+      </p>
+      <p>© Updated on July 2025 Xi Chen. All rights reserved including personal portrait and contents.</p>
+      <p style="font-size: 0.8rem; color: #aaa;">Some illustrations and visuals on this site were generated using OpenAI's GPT-4.0 tools.</p>
     </footer>
     <script src="script.js"></script>
   </body>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="index.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id ="RA">
+        <a href="index.html#experience" class="btn btn-color-2 project-btn">Go Back</a>
+        <p class="section__text__p1">SWE Intern 2024</p>
+        <h1 class="title">Software Engineer Intern at Hirebeat</h1>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Description</h2>
+                <p>
+                    At Hirebeat, I worked as a Software Engineer Intern focused on integrating AI into real product workflows. I built backend features using Django and AWS, and spent most of my time designing agent systems with LangGraph to handle multi-step logic and self-retrieval. One key project involved building an automated email responder using prompt flow orchestration and fine-tuned LLMs. I also helped optimize data handling between the AI layer and the backend, making the system more reliable and scalable. This role gave me hands-on experience applying RAG techniques and designing systems that actually run in production.
+                </p>
+            </div>
+        </div>
+
+        <div class = "experience-details-container">
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">RAG - Retrieval Augmented Generation</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/idea.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        >
+                        <p>
+                            I built a self-retrieving RAG pipeline using LangGraph, where I orchestrated multi-step logic as a dynamic graph to control LLM behavior. Each node in the graph represented a discrete operation—retrieval, memory access, or generation—allowing the agent to decide when and how to retrieve relevant information based on evolving prompts. 
+                        </p>
+                    </div>
+                    <div class="btn-container">
+                        <div class ="skills">
+                          RAG
+                        </div>
+                        <div class ="skills">
+                          Backend
+                        </div>
+                        <div class ="skills">
+                          AI
+                        </div>
+                        <div class ="skills">
+                            Python/AWS
+                        </div>
+                    </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">File Setting</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/idea.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        >
+                        <p>
+                            Designed a dual-source RAG system using LangGraph to dynamically choose between local and AWS-based retrieval (S3, FAISS, OpenSearch). The agent treats retrieval as a directed graph—deciding when and how to pull context, enabling fast dev loops and scalable cloud performance.
+                        </p>
+                    </div>
+                    <div class="btn-container">
+                        <div class ="skills">
+                          Files
+                        </div>
+                        <div class ="skills">
+                          Backend
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: right; margin-bottom: 0.5rem;">
+            <a
+              href="https://hirebeat.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="text-decoration: none; font-weight: bold; color: #007BFF;"
+            >
+            👉 Visit HireBeat Website
+            </a>
+        </div>
+          
+
+        <iframe
+            src="https://hirebeat.co"
+            width="100%"
+            height="400"
+            style="border-color:black; border-radius: 2rem;"
+            loading="lazy"
+        ></iframe>
+
+        
+        
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

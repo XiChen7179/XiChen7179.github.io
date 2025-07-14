@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="index.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id ="VL">
+        <a href="index.html#experience" class="btn btn-color-2 project-btn">Go Back</a>
+        <p class="section__text__p1">SWE Intern 2025</p>
+        <h1 class="title">Software Engineer Intern at Verio Labs</h1>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Description</h2>
+                <p>
+                  At Verio Labs, I’m building intelligent AI agents that autonomously reason, retrieve, and act across data streams—supporting over 240K+ users. I developed a modular agent system using LangGraph, where each node handles specialized functions like self-retrieval via RAG, real-time aggregation, source grading, and answer reframing for clarity and trust. My infrastructure connects Twitter-scale data ingestion with vector-based context selection, ensuring that only the most relevant insights are surfaced. This architecture reduces latency, filters noise, and enables the agents to serve verifiable, high-signal information—transforming raw content into structured, reliable insight delivery. This experience gives me the new insight that Web3’s real strength lies not in “quick money,” but in creating persistent, verifiable frameworks for innovation and ownership.
+                </p>
+            </div>
+        </div>
+        <p class="section__text__p1">Twitter Bot link and the rest of my work and skills will be updated soon after I complete this internship this summer 🙂</p>
+
+        
+        
+        
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

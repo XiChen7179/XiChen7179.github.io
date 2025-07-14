@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xi Chen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xi Chen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="index.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id ="RA">
+        <a href="index.html#experience" class="btn btn-color-2 project-btn">Go Back</a>
+        <p class="section__text__p1">Personal Side Project</p>
+        <h1 class="title">GooseCart</h1>
+        <div class="article-container">
+            <div class="details-container">
+                <h2>Description</h2>
+                <p>
+                  GooseCart is a cross-platform mobile app I co-founded and led as both PM and lead engineer through Georgia Tech’s Create-X. Designed to streamline group ordering in neighborhood communities, the app integrates with social platforms like WeChat and Facebook for seamless user onboarding and collaboration. I built the backend using Java Spring Boot, Firebase, and MongoDB, and shipped native frontends in Swift, Android, and React Native. On the AI side, I developed demand prediction and recommendation tools with Python and LangChain. GooseCart was named a top 5% Y Combinator Summer applicant and won support from the Johns Hopkins Incubator and Create-X Demo Day.
+                </p>
+            </div>
+        </div>
+
+        <div class = "experience-details-container">
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">Full Stack Developer</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/idea.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        >
+                        <p>
+                          As a full stack developer, I architect and implement scalable systems across the stack—from frontend interfaces in React/Swift to backend services in Java Spring Boot and Flask. My work emphasizes clean API design, modular architecture, and performance optimization across distributed systems. On the infrastructure side, I deploy and manage apps using Google Cloud (Cloud Functions, Firestore, Compute Engine), enabling real-time features, secure auth, and seamless CI/CD. I design with adaptability in mind—whether it’s cloud-based microservices or hybrid architectures that balance cost and speed. 
+                        </p>
+                    </div>
+                    <div class="btn-container">
+                        <div class ="skills">
+                          Full Stack
+                        </div>
+                        <div class ="skills">
+                          Cloud Computing
+                        </div>
+                        <div class ="skills">
+                          Product/System Design
+                        </div>
+                        <div class ="skills">
+                            MVC/CICD
+                        </div>
+                    </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class="experience-sub-title">Think as PM</h2>
+                    <div class="article-container">
+                        <img
+                        src="./assets/idea.jpg"
+                        alt="Experience icon"
+                        class="icon"
+                        >
+                        <p>
+                          Think as PM captures how I led GooseCart not only as a full-stack engineer but also as a product thinker. I mapped real neighborhood pain points into product features, scoped MVP flows based on user interviews, and aligned the engineering roadmap with our business model. From architecting the backend system to refining UI components, every decision was driven by impact and iteration speed. GooseCart wasn’t just about building—it was about building the right thing, fast.
+                        </p>
+                    </div>
+                    <div class="btn-container">
+                        <div class ="skills">
+                          Files
+                        </div>
+                        <div class ="skills">
+                          Backend
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+              
+                <div class = "about-containers">
+                  <div class = "details-container">
+                    <h2 class="experience-sub-title">Demo SOON</h2>
+                    
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        
+        
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
