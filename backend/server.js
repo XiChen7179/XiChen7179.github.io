@@ -15,7 +15,7 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE
 );
 
-app.post('/submit-form', async (req, res) => {
+app.post('${backend}/submit-form', async (req, res) => {
   const { name, email, project, details } = req.body;
 
   const { error } = await supabase.from('collaborator_messages').insert([
