@@ -1,3 +1,4 @@
+const BACKEND_URL = "https://xichen7179-github-io.onrender.com";
 window.addEventListener('DOMContentLoaded', submit_form);
 
 function showAlert(message) {
@@ -8,7 +9,6 @@ function showAlert(message) {
 function closeAlert() {
   document.getElementById('custom-alert').classList.add('hidden');
 }
-
 
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
@@ -31,7 +31,7 @@ function submit_form() {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
   
-    const res = await fetch('http://localhost:3000/submit-form', {
+    const res = await fetch(`${BACKEND_URL}/submit-form`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)

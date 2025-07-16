@@ -3,6 +3,8 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const { createClient } = require('@supabase/supabase-js');
 
+const BACKEND_URL = "https://xichen7179-github-io.onrender.com";
+
 dotenv.config();
 const app = express();
 app.use(cors());
