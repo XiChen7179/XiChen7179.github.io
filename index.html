@@ -17,7 +17,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="https://forms.gle/PNtrBFkGVJ7a5Byw5">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -557,10 +557,10 @@
       </div>
     </section>
 
-    <!-- <section id="contact">
+    <section id="contact">
       <p class="section__text__p1">Want More Info</p>
       <h1 class="title">Contact Me</h1>
-      <p class="section__text__p1">To keep things more efficient, this section is organized by role to help you find the most relevant information. If you don’t fall into one of these categories or are reaching out under misleading intentions, I may not respond. I typically reply within 0–2 days asap.</p>
+      <p class="section__text__p1"> If you don’t fall into one of these categories or are reaching out under misleading intentions, I may not respond. I typically reply within 0–2 days asap.</p>
       <div class="contact-switcher">
         <h3>Who are you</h3>
         <div class="role-buttons">
@@ -570,17 +570,31 @@
         </div>
       
         <div id="recruiter" class="role-content">
-          <p>I’m actively seeking 2026 SWE internships or any suitable NG/Full-time position starting December 2025. Please send the email to my email address below and view my resume at the very top! </p>
+          <p>I’m actively seeking 2026 SWE internships or any suitable NG/Full-time position starting December 2025. </p>
           <p>I prefer email: xichen.sophia@gmail.com or xchen819@gatech.edu.</p>
           <p> Note: My school email ending with gatech.edu will expire after December 2025</p>
+          <a onclick="window.location.href='mailto:xichen.sophia@gmail.com'">Email</a>
         </div>
         <div id="collaborator" class="role-content" style="display: none;">
           <p>I'm open to side projects and hackathons! Let’s build something impactful together.</p>
+          <form id="collabForm">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="text" name="project" placeholder="Project Name" required />
+            <textarea name="details" placeholder="Describe your idea..." required></textarea>
+            <button type="submit" >Send</button>
+          </form>
+          <div id="custom-alert" class="alert hidden">
+            <p id="alert-message">Thank you for reaching out</p>
+            <button onclick="closeAlert()">OK</button>
+          </div>
         </div>
         <div id="learner" class="role-content" style="display: none;">
-          <p>Curious about my journey or projects? I love sharing learnings — feel free to connect on LinkedIn or drop a message.</p>
+          <p>Curious about my journey or projects? I love sharing learnings — feel free to connect on LinkedIn and drop a message.</p>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
+          <a href="https://forms.gle/PNtrBFkGVJ7a5Byw5">Drop a message</a>
         </div>
-      </div>       -->
+      </div>      
         
        
     </section>
@@ -589,12 +603,13 @@
     <footer style="padding: 2rem; text-align: center; font-size: 0.9rem; background-color: #232324; color: #f7f4f4;">
       <p>Built by Xi (Sophia) Chen.</p>
       <p>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+        <a href="https://www.linkedin.com/in/xi-chen-b90271231/" target="_blank">LinkedIn</a> |
         <a onclick="window.location.href='mailto:xichen.sophia@gmail.com'">Email</a>
       </p>
       <p>© Updated on July 2025 Xi Chen. All rights reserved including personal portrait and contents.</p>
       <p style="font-size: 0.8rem; color: #aaa;">Some illustrations and visuals on this site were generated using OpenAI's GPT-4.0 tools.</p>
     </footer>
     <script src="script.js"></script>
+    
   </body>
 </html>
