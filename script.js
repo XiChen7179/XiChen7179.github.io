@@ -4,3 +4,10 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+function showRole(role) {
+  const roles = ['recruiter', 'collaborator', 'learner'];
+  roles.forEach(r => {
+    document.getElementById(r).style.display = (r === role) ? 'block' : 'none';
+  });
+}
